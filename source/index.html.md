@@ -25,18 +25,13 @@ search: true
 
 # Introduction
 
-The Exposit API, by Bon Vivant In-site (the API) follows the [JSON API v1.0](https://jsonapi.org/format/).
+The Exposit API, by Bon Vivant In-site follows the, for which the complete specification can be
+found at (https://jsonapi.org/format/).
 
-A list of libraries implementing JSON:API is available at: [https://jsonapi.org/implementations/](https://jsonapi.org/implementations/)
+The JSON API Overview section tries to give an overview of some relevant capabilities of the API.
+The complete Specification and additional resources can be found at [JSON API v1.0](https://jsonapi.org/).
 
-For example, when version 3.2.12 is the latest published API version, the API versions are available at the following URIs:
-
-
-| Base Path     | API Version  |
-| ------------- |:--------------|
-| /api/v3       | v.3.2.12      |
-| /api/v31      | v.3.1.x       |
-| /api/v32      | v.3.2.12      |
+For questions, or to get access to our API, contact our <a href="mailto:apiteam@exposit.nl">API team</a>
 
 
 # Versioning
@@ -61,6 +56,14 @@ attribute data types, tighten restrictions on attribute data types.
 
 Major version changes signify updates to the API in a potentially incompatible way.
 
+For example, when version 3.2.12 is the latest published API version, the API versions are available at the following URIs:
+
+
+| Base Path     | API Version  |
+| ------------- |:--------------|
+| /api/v3       | v.3.2.12      |
+| /api/v31      | v.3.1.x       |
+| /api/v32      | v.3.2.12      |
 
 
 
