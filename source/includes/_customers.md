@@ -65,5 +65,13 @@
 
 ### Relationships
 
+* [Addresses](#adresses)
 * [Article](#articles)
 * [Orders](#orders)
+
+
+### Filters
+
+ * completed
+ * completed_after
+ * updateded_after

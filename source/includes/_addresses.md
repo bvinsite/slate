@@ -37,3 +37,9 @@
 | primary        | boolean   | one primary address allowed per variant
 | created-at     | timestamp | *read-only*
 | updated-at     | timestamp | *read-only*
+
+
+### Filters
+
+  * primary
+  * variant
