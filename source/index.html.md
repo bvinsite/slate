@@ -1,17 +1,23 @@
 ---
-title: API Reference
+title: Exposit API (v3.0.5)
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - ruby
-  - python
-  - javascript
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - Een Bon Vivant In-site project
+  - Email our <a href="mailto:apiteam@exposit.nl">API team</a>
   - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
 
 includes:
+  - introduction
+  - addresses
+  - articles
+  - components
+  - customers
+  - orders
+  - order_lines
+  - products
+  - sales_taxes
   - errors
 
 search: true
@@ -19,221 +25,225 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+The Exposit API, by Bon Vivant In-site (the API) follows the [JSON API v1.0](https://jsonapi.org/format/).
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+A list of libraries implementing JSON:API is available at: [https://jsonapi.org/implementations/](https://jsonapi.org/implementations/)
 
-This example API documentation page was created with [Slate](https://github.com/lord/slate). Feel free to edit it and use it as a base for your own API's documentation.
+For example, when version 3.2.12 is the latest published API version, the API versions are available at the following URIs:
+
+
+| Base Path     | API Version  |
+| ------------- |:--------------|
+| /api/v3       | v.3.2.12      |
+| /api/v31      | v.3.1.x       |
+| /api/v32      | v.3.2.12      |
+
+
+# Versioning
+
+Versioning folllows the major.minor.micro format.
+
+**Micro versions**
+
+Micro version changes present no or very limited risks to compatibility.
+
+For example: Micro versions may introduce new attributes, endpoints, relationships. Micro versions may relax or
+remove restrictions on attribute data types.
+
+**Minor versions**
+
+Minor version changes may present some impact on compatibility.
+
+For example: Minor versions may remove or rename attributes, or relationships. Minor versions may change
+attribute data types, tighten restrictions on attribute data types.
+
+**Major versions**
+
+Major version changes signify updates to the API in a potentially incompatible way.
+
+
+
 
 # Authentication
 
 > To authorize, use this code:
 
 ```ruby
-require 'kittn'
+require 'faraday'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+json = Faraday.new('https://api.nextposit.nl/api/v3/customers', headers: { x_api_key: "40d73b963f" }).get
 ```
 
 ```python
-import kittn
+import requests
 
-api = kittn.authorize('meowmeowmeow')
+json = requests.get(url, headers={'x-api-key': '40d73b963f'})
 ```
 
 ```shell
 # With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
+curl "https://api.nextposit.nl/api/v3/customers" -H "A-api-key: 40d73b963f"
 ```
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+The exposit API uses an API key to access teh API. You can request a new API key by contacting our [API team](apiteam@exposit.nl)
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+All API request to the server should include the api key in the request header;
 
-`Authorization: meowmeowmeow`
+`x-api-key: 21f2baabd36866a4664e0056241e22c8`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>21f2baabd36866a4664e0056241e22c8</code> with your API key.
 </aside>
 
-# Kittens
+# Requests
 
-## Get All Kittens
+As per the JSON:API specification on on [content negotiation]
+(https://jsonapi.org/format/#content-negotiation), make sure to send the required Content-Type
+header when sending data to the API
 
-```ruby
-require 'kittn'
+<aside class="notice">
+  Clients MUST send all JSON:API data in request documents with the header Content-Type: application/vnd.api+json without any media type parameters.
+</aside>
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
+Every resource responds to one or more of the endpoints described in this section
 
-```python
-import kittn
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
 
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
 
-```javascript
-const kittn = require('kittn');
+## List resources
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
-```
-
-> The above command returns JSON structured like this:
+> Example response
 
 ```json
 [
   {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
+    "id": "0ad6ceaa-839a-446c-ad14-7afd31d8d6cb",
+    "type": "products", // The reource type being returned
+    "links": {
+      "self": "" // The link that generated the current response document.
+    },
+    "attributes": {
+      "plu": "1009",
+      "price": 809.02,
+      // The current resource's attributes
+    },
+    "relationships": {
+      // ... this article's relationships
+    }
   },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
+  ...
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint returns a list of resources
 
-### HTTP Request
+### Request
 
-`GET http://example.com/api/kittens`
+GET */api/v3/resource*
 
-### Query Parameters
 
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+### Response
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
+**200** OK
 
-## Get a Specific Kitten
+#### Response body
 
-```ruby
-require 'kittn'
+A JSON array of resources
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
 
-```python
-import kittn
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
+## Create a resource
 
-```javascript
-const kittn = require('kittn');
+This endpoint creates a new resource
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
-```
+### Request
 
-> The above command returns JSON structured like this:
+POST */api/v3/resource*
 
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
+##### Request body
 
-This endpoint retrieves a specific kitten.
+The resource to be created
 
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+### Response
 
-### HTTP Request
+**201** Created
 
-`GET http://example.com/kittens/<ID>`
+#### Response body
 
-### URL Parameters
+The created resource
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
 
-## Delete a Specific Kitten
 
-```ruby
-require 'kittn'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
+## Retrieve a resource
 
-```python
-import kittn
+This endpoint returns a single resource
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
+### Request
 
-```shell
-curl "http://example.com/api/kittens/2"
-  -X DELETE
-  -H "Authorization: meowmeowmeow"
-```
+GET */api/v3/resource/$id*
 
-```javascript
-const kittn = require('kittn');
+#### URL parameters
 
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
+| Name | Description |
+| ---- | ----------- |
+| id   | The resource's id |
 
-> The above command returns JSON structured like this:
+##### Request body
 
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
+The resource to be created
 
-This endpoint deletes a specific kitten.
+### Response
 
-### HTTP Request
+**200** OK
 
-`DELETE http://example.com/kittens/<ID>`
+#### Response body
 
-### URL Parameters
+The requested resource
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
+
+
+
+## Update a resource
+
+This endpoint updates an existing resource
+
+### Request
+
+PATCH */api/v3/resource/$id*
+
+##### Request body
+
+The updated resource, data not present in the request body be left unchanged.
+
+### Response
+
+**200** OK
+
+#### Response body
+
+The updated resource
+
+
+
+
+## Remove a resource
+
+This endpoint removes an existing resource
+
+### Request
+
+DELETE */api/v3/resource/$id*
+
+### Response
+
+**204** No Content
+
+#### Response body
+
+*None*
+
 
