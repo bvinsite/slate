@@ -17,7 +17,7 @@ Articles add additional information to products required in the rest of the Expo
       "fixed-base-price-with-tax": 567,
       "name": "Spaghetti Bolognese",
       "sku": "B000A3K6TM",
-      "plu": 4351,
+      "plu": "4351ab",
       "created-at": "2018-11-02T11:56:51.080+01:00",
       "updated-at": "2018-11-02T11:56:51.080+01:00"
     },
@@ -63,9 +63,9 @@ Articles add additional information to products required in the rest of the Expo
 | --------------------------- | --------- | ------------------- |
 | fixed-base-price            | float     |  pre-tax price, overrides calculated price of underlying products
 | fixed-base-price-with-tax   | string    |
-| name                        | string    | *required, unique*
+| name                        | string    | *required*
 | sku                         | enum      |
-| plu                         | boolean   |
+| plu                         | string    | *required, unique*
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 

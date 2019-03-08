@@ -15,7 +15,7 @@
         "attributes": {
             "description": null,
             "name": "Spaghetti Bolognese",
-            "plu": "17169",
+            "plu": "17169ab",
             "price": 967,
             "sells-by-weight": true,
             "sku": null,
@@ -45,8 +45,8 @@
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
 | description                 | string    |
-| name                        | string    |
-| plu                         | string    |
+| name                        | string    | *required*
+| plu                         | string    | *required, unique*
 | price                       | float     | price before tax
 | sells-by-weight             | boolean   |
 | sku                         | integer   |
