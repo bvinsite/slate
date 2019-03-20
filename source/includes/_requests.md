@@ -2,7 +2,7 @@
 
 # Requests
 
-As per the JSON:API specification on on [content negotiation]
+As per the JSON:API specification on [content negotiation]
 (https://jsonapi.org/format/#content-negotiation), make sure to send the required Content-Type
 header when sending data to the API
 
