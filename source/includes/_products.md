@@ -55,6 +55,15 @@
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
+
+### Filters
+
+| Parameter                   | Format    |  Partial Matches    |
+| --------------------------- | --------- | ------------------- |
+| name                        | string    |  Y
+| plu                         | string    |  N
+| sku                         | integer   |  N
+
 ### Relationships
 
 * [SalesTax](#salestax)

@@ -72,6 +72,13 @@
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
+### Filters
+
+| Parameter                   | Format    |  Partial Matches    |
+| --------------------------- | --------- | ------------------- |
+| completed                   | boolean   |  N/A
+| completed_after             | timestamp |  N/A
+| updated_after               | timestamp |  N/A
 
 
 ### Relationships

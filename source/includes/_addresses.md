@@ -41,5 +41,7 @@
 
 ### Filters
 
-  * primary
-  * variant
+| Parameter                   | Format    |  Partial Matches    |
+| --------------------------- | --------- | ------------------- |
+| primary                     | boolean   |  N/A
+| variant                     | string    |  N
