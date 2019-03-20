@@ -12,20 +12,21 @@
             "self": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79"
         },
         "attributes": {
-            "attendant": null,
-            "completed-at": "2018-11-02T11:56:53.714+01:00",
-            "customer-address": null,
-            "customer-city": null,
-            "customer-name": null,
-            "customer-remark": null,
-            "customer-phone": null,
-            "customer-postal-code": null,
-            "name": "Sina Wiegand",
-            "number": 25,
-            "payment-completed": null,
-            "pickup-at": "2018-10-28T05:39:33.635+01:00",
-            "created-at": "2018-11-02T11:56:53.639+01:00",
-            "updated-at": "2018-11-02T11:56:53.715+01:00"
+          "attendant": "",
+          "completed-at": "2018-12-03T13:52:05.272+01:00",
+          "customer-address": "Aalbertstraat 972",
+          "customer-city": "Oud Aalbert aan de Rijn",
+          "customer-name": "Bard den Ven",
+          "customer-remark": "",
+          "customer-phone": "",
+          "customer-postal-code": "8042 JL",
+          "delivery-at": null,
+          "number": null,
+          "payment-completed": "2018-12-03T13:51:05.272+01:00",
+          "pickup-at": "2018-12-06T14:00:00.000+01:00",
+          "targeted-at": "2018-12-06T14:00:00.000+01:00",
+          "created-at": "2018-12-03T11:51:05.272+01:00",
+          "updated-at": "2018-12-03T11:51:05.272+01:00"
         },
         "relationships": {
             "company": {
@@ -64,8 +65,10 @@
 | customer-remark             | string    |
 | customer-phone              | string    |
 | customer-postal-code        | string    |
+| delivery-at                 | timestamp | Indicates the time for order delivery. When defined, pickup-at must be null
 | number                      | integer   |
-| payment-completed           | boolean   |
+| payment-completed           | timestamp | Indicates the time for completing an only payment
+| pickup-at                   | timestamp | Indicates the time for order pickup. When defined, delivery-at must be null
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 

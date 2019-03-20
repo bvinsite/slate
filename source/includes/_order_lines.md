@@ -18,7 +18,6 @@
             "customer-remark": null,
             "total-price": "2814.0",
             "unit-price": "469.0",
-            "sales-tax-id": "b3081629-ec17-4dac-9764-97e4f4f03256",
             "weight": null,
             "created-at": "2018-11-02T11:56:53.645+01:00",
             "updated-at": "2018-11-02T11:56:53.673+01:00"
