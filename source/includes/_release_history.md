@@ -29,6 +29,8 @@ Feature release
 
 Paginated responses are _only_ allowed to user either number/size for paged pagination, or offset/limit for offset pagination. Specifying parameters for both stratgies will result in an error response.
 
+The deprecated attribute name removed from order. Use customer-name, to set a customer name on the order.
+
 ### Features
 
 Implemented a Paged Paginator. The paginator can be selected in the request by including
