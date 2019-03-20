@@ -27,7 +27,7 @@ Feature release
 
 ### Compatibility
 
- - Paginated responses are _only_ allowed to user either number/size for paged pagination, or offset/limit for offset pagination
+Paginated responses are _only_ allowed to user either number/size for paged pagination, or offset/limit for offset pagination. Specifying parameters for both stratgies will result in an error response.
 
 ### Features
 
