@@ -1,5 +1,5 @@
 ---
-title: Exposit API (v3.0.6)
+title: Exposit API (v3.0.5)
 
 language_tabs: # must be one of https://git.io/vQNgJ
 
@@ -11,7 +11,6 @@ toc_footers:
 includes:
   - introduction
   - jsonapi_overview
-  - requests
   - versioning
   - release_history
   - addresses
