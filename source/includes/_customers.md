@@ -61,17 +61,19 @@
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
+### Filters
 
+| Parameter                   | Format    |  Partial Matches    |
+| --------------------------- | --------- | ------------------- |
+| email                       | string    |  N
+| name                        | string    |  Y
+| number                      | integer   |  N
 
 ### Relationships
 
+* [Company](#companies)
 * [Addresses](#adresses)
-* [Article](#articles)
 * [Orders](#orders)
 
 
-### Filters
 
- * completed
- * completed_after
- * updateded_after
