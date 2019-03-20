@@ -53,7 +53,7 @@ supported via offset or page. Resources are paginated in groups of 50 by default
 /orders?page[limit]=25&page[offset]=50
 ```
 
-The offset paginator returns results based on an offset from the beginning of the resultset. Valid page parameters are offset and limit.
+The offset paginator returns results based on an offset from the beginning of the resultset. Valid page parameters are *page[offset]* and *page[limit]*.
 
 
 ### Paged pagination
@@ -65,7 +65,7 @@ The offset paginator returns results based on an offset from the beginning of th
 /orders?page[number]=3&page[size]=25
 ```
 
-The offset paginator returns results based on page number and page size.  Valid page parameters are number and size.
+The offset paginator returns results based on page number and page size.  Valid page parameters are *page[number]* and *page[size]*.
 
 
 ### Paginated response
@@ -81,7 +81,7 @@ The offset paginator returns results based on page number and page size.  Valid 
     }
 </pre>
 
-The response will include URLs for the first, next and last page of resources in the links object
+The response will include URLs for the first, previous, next and last page of resources in the links object
 based on your request.
 
 

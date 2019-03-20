@@ -13,7 +13,6 @@ includes:
   - jsonapi_overview
   - requests
   - versioning
-  - release_history
   - addresses
   - articles
   - components
@@ -23,6 +22,7 @@ includes:
   - products
   - sales_taxes
   - errors
+  - release_history
 
 search: true
 ---

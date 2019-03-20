@@ -30,3 +30,8 @@ Feature release
  - Paginated responses are _only_ allowed to user either number/size for paged pagination, or offset/limit for offset pagination
 
 ### Features
+
+Implemented a Paged Paginator. The paginator can be selected in the request by including
+
+- page[offset] and page[limit] parameters, or
+- page[number] and page[size] parameters
