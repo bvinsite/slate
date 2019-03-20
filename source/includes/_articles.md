@@ -2,7 +2,7 @@
 
 Articles add additional information to products required in the rest of the Exposit application.
 
-> Example Address
+> Example Article
 
 ```json
 {
