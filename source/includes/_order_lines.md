@@ -18,6 +18,7 @@
             "customer-remark": null,
             "total-price": "2814.0",
             "unit-price": "469.0",
+            "sales-tax-id": "b3081629-ec17-4dac-9764-97e4f4f03256",
             "weight": null,
             "created-at": "2018-11-02T11:56:53.645+01:00",
             "updated-at": "2018-11-02T11:56:53.673+01:00"
@@ -56,6 +57,7 @@
 | customer-remark             | string    |
 | total-price                 | decimal   | pre-tax price in cents, total-price is unit-price times count
 | unit-price                  | decimal   | pre-tax price in cents, calculated price based on ordered article
+| sales-tax-id                | uuid      | id of an existing SalesTax
 | weight                      | float     |
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*

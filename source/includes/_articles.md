@@ -65,6 +65,7 @@ Articles add additional information to products required in the rest of the Expo
 | fixed-base-price-with-tax   | integer   |  tax price in cents
 | name                        | string    | *required*
 | sku                         | string    |
+| sales-tax-id                | uuid      | id of an existing SalesTax
 | plu                         | string    | *required, unique*
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*

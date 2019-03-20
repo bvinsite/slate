@@ -17,6 +17,7 @@
             "name": "Spaghetti Bolognese",
             "plu": "17169ab",
             "price": 967,
+            "sales-tax-id": "b3081629-ec17-4dac-9764-97e4f4f03256",
             "sells-by-weight": true,
             "sku": null,
             "created-at": "2018-11-02T11:56:50.639+01:00",
@@ -48,6 +49,7 @@
 | name                        | string    | *required*
 | plu                         | string    | *required, unique*
 | price                       | float     | price before tax
+| sales-tax-id                | uuid      | id of an existing SalesTax
 | sells-by-weight             | boolean   |
 | sku                         | integer   |
 | created-at                  | timestamp | *read-only*
