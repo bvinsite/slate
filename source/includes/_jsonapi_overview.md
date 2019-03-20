@@ -28,14 +28,14 @@ Content-Type: application/vnd.api+json
 > Filtered request example
 
 ```
-  /orders?filter[finalised-after]=2001-12-31
+  /orders?filter[created-after]=2001-12-31
   /orders?filter[finalised-after]=2001-12-31
 ```
 
 Filtering lets you query data that contains certain matching attributes or relationships.
 
-These take the form of filter[name]=value. As an example, you can ask the API to retrn all orders
-create after a timestamp
+These take the form of filter[name]=value. As an example; you can ask the API to return all orders
+created after a timestamp
 
 
 ## Pagination

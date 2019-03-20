@@ -21,9 +21,9 @@ curl "https://api.nextposit.nl/api/v3/customers" -H "A-api-key: 40d73b963f"
 
 > Make sure to replace `meowmeowmeow` with your API key.
 
-The exposit API uses an API key to access teh API. You can request a new API key by contacting our [API team](apiteam@exposit.nl)
+The exposit API uses an API key to access the API. You can request a new API key by contacting our [API team](apiteam@exposit.nl)
 
-All API request to the server should include the api key in the request header;
+All API request to the server should include the API key in the request header;
 
 `x-api-key: 21f2baabd36866a4664e0056241e22c8`
 
