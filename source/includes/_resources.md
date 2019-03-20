@@ -15,6 +15,7 @@ includes:
   - release_history
   - addresses
   - articles
+  - companies
   - components
   - customers
   - orders

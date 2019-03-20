@@ -21,6 +21,7 @@ includes:
   - order_lines
   - products
   - sales_taxes
+  - tags
   - errors
   - release_history
 
