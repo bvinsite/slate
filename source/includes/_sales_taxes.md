@@ -1,4 +1,4 @@
-## SalesTax
+## SalesTaxes
 
 SalesTax is a a read-only resource
 

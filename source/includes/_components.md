@@ -48,7 +48,7 @@ Components determine the fixed Products making up an Article.
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
 | count                       | integer   |  when defined, weight must be null
-| fixed-price                 | float     |  pre-tax price, overrides calculated price of underlying products
+| fixed-price                 | decimal   |  pre-tax price in cents, overrides calculated price of underlying products
 | weight                      | integer   |  when defined, count must be null
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*

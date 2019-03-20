@@ -54,8 +54,8 @@
 | article-plu                 | integer   |
 | count                       | integer   |
 | customer-remark             | string    |
-| total-price                 | float     |
-| unit-price                  | float     |
+| total-price                 | decimal   | pre-tax price in cents, total-price is unit-price times count
+| unit-price                  | decimal   | pre-tax price in cents, calculated price based on ordered article
 | weight                      | float     |
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*

@@ -114,7 +114,7 @@ multiple relationships.
 
 ## Sparse Fieldsets
 
-> Sparse ields request example
+> Sparse fields request example
 
 ```
 /product?fields=name,plu

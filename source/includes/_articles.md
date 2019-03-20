@@ -61,10 +61,10 @@ Articles add additional information to products required in the rest of the Expo
 
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
-| fixed-base-price            | float     |  pre-tax price, overrides calculated price of underlying products
-| fixed-base-price-with-tax   | string    |
+| fixed-base-price            | decimal   |  pre-tax price in cents, overrides calculated price of underlying products
+| fixed-base-price-with-tax   | integer   |  tax price in cents
 | name                        | string    | *required*
-| sku                         | enum      |
+| sku                         | string    |
 | plu                         | string    | *required, unique*
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
