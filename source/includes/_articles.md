@@ -6,54 +6,54 @@ Articles add additional information to products required in the rest of the Expo
 
 ```json
 {
-  "data": {
-    "id": "4c175fbe-13c5-4eef-a0b9-4f3fe1732d62",
-    "type": "articles",
-    "links": {
-      "self": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62"
-    },
-    "attributes": {
-      "fixed-base-price": "469.0",
-      "fixed-base-price-with-tax": 567,
-      "name": "Spaghetti Bolognese",
-      "sku": "B000A3K6TM",
-      "plu": "4351ab",
-      "created-at": "2018-11-02T11:56:51.080+01:00",
-      "updated-at": "2018-11-02T11:56:51.080+01:00"
-    },
-    "relationships": {
-      "components": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/relationships/components",
-          "related": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/components"
-        }
+   "data":{
+      "id":"016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e",
+      "type":"articles",
+      "links":{
+         "self":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e"
       },
-      "selections": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/relationships/selections",
-          "related": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/selections"
-        }
+      "attributes":{
+         "fixed-base-price":"3022.94",
+         "fixed-base-price-with-tax":3295,
+         "name":"Smulsteen Mixed Grill Trio",
+         "sku":null,
+         "plu":"1733",
+         "created-at":"2019-02-11T14:03:40.000+01:00",
+         "updated-at":"2019-03-19T16:52:01.318+01:00"
       },
-      "tags": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/relationships/tags",
-          "related": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/tags"
-        }
-      },
-      "company": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/relationships/company",
-          "related": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/company"
-        }
-      },
-      "sales-tax": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/relationships/sales-tax",
-          "related": "https://api.nexposit.nl/api/v3/articles/4c175fbe-13c5-4eef-a0b9-4f3fe1732d62/sales-tax"
-        }
+      "relationships":{
+         "components":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/relationships/components",
+               "related":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/components"
+            }
+         },
+         "selections":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/relationships/selections",
+               "related":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/selections"
+            }
+         },
+         "tags":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/relationships/tags",
+               "related":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/tags"
+            }
+         },
+         "company":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/relationships/company",
+               "related":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/company"
+            }
+         },
+         "sales-tax":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/relationships/sales-tax",
+               "related":"https://api.nextposit.nl/api/v31/articles/016b2bc4-df9c-42b0-ac4b-d54f7fcbea8e/sales-tax"
+            }
+         }
       }
-    }
-  }
+   }
 }
 ```
 
@@ -68,6 +68,16 @@ Articles add additional information to products required in the rest of the Expo
 | plu                         | string    | *required, unique*
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
+
+### Filters
+
+| Parameter                   | Format    |  Partial Matches    |  Allowed values  |
+| --------------------------- | --------- | ------------------- | ---------------- |
+| plu                         | string    |  N                  |                  |
+| sku                         | string    |  N                  |                  |
+| name                        | string    |  Y                  |                  |
+| created_after               | timestamp |  N/A                |                  |
+| updated_after               | timestamp |  N/A                |                  |
 
 ### Relationships
 

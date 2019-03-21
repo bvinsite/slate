@@ -6,40 +6,40 @@ Components determine the fixed Products making up an Article.
 
 ```json
 {
-  "data": {
-    "id": "eb5ff8cf-74a1-402d-9495-d17ef88ecc14",
-    "type": "components",
-    "links": {
-      "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14"
-    },
-    "attributes": {
-      "count": null,
-      "fixed-price": null,
-      "weight": 150,
-      "created-at": "2018-11-02T11:56:51.082+01:00",
-      "updated-at": "2018-11-02T11:56:51.082+01:00"
-    },
-    "relationships": {
-      "article": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/relationships/article",
-          "related": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/article"
-        }
+   "data":{
+      "id":"911e453f-50df-4a55-b263-2111c1b4b0f4",
+      "type":"components",
+      "links":{
+         "self":"https://api.nextposit.nl/api/v31/components/911e453f-50df-4a55-b263-2111c1b4b0f4"
       },
-      "company": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/relationships/company",
-          "related": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/company"
-        }
+      "attributes":{
+         "count":1,
+         "fixed-price":"295.0",
+         "weight":null,
+         "created-at":"2019-03-19T16:50:29.932+01:00",
+         "updated-at":"2019-03-19T16:50:29.932+01:00"
       },
-      "product": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/relationships/product",
-          "related": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/product"
-        }
+      "relationships":{
+         "article":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/components/911e453f-50df-4a55-b263-2111c1b4b0f4/relationships/article",
+               "related":"https://api.nextposit.nl/api/v31/components/911e453f-50df-4a55-b263-2111c1b4b0f4/article"
+            }
+         },
+         "company":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/components/911e453f-50df-4a55-b263-2111c1b4b0f4/relationships/company",
+               "related":"https://api.nextposit.nl/api/v31/components/911e453f-50df-4a55-b263-2111c1b4b0f4/company"
+            }
+         },
+         "product":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/components/911e453f-50df-4a55-b263-2111c1b4b0f4/relationships/product",
+               "related":"https://api.nextposit.nl/api/v31/components/911e453f-50df-4a55-b263-2111c1b4b0f4/product"
+            }
+         }
       }
-    }
-  }
+   }
 }
 ```
 
@@ -53,7 +53,12 @@ Components determine the fixed Products making up an Article.
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
+### Filters
 
+| Parameter                   | Format    |  Partial Matches    |  Allowed values  |
+| --------------------------- | --------- | ------------------- | ---------------- |
+| created_after               | timestamp |  N/A                |                  |
+| updated_after               | timestamp |  N/A                |                  |
 
 ### Relationships
 
