@@ -7,40 +7,29 @@ Tags are used to categorize Products or Articles
 
 ```json
 {
-  "data": {
-    "id": "eb5ff8cf-74a1-402d-9495-d17ef88ecc14",
-    "type": "components",
-    "links": {
-      "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14"
-    },
-    "attributes": {
-      "count": null,
-      "fixed-price": null,
-      "weight": 150,
-      "created-at": "2018-11-02T11:56:51.082+01:00",
-      "updated-at": "2018-11-02T11:56:51.082+01:00"
-    },
-    "relationships": {
-      "article": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/relationships/article",
-          "related": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/article"
-        }
+   "data":{
+      "id":"03b970bd-bacd-4e23-ab89-d55cca0159d9",
+      "type":"tags",
+      "links":{
+         "self":"https://api.nextposit.nl/api/v31/tags/03b970bd-bacd-4e23-ab89-d55cca0159d9"
       },
-      "company": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/relationships/company",
-          "related": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/company"
-        }
+      "attributes":{
+         "description":null,
+         "name":"soepen",
+         "primary":null,
+         "rank":null,
+         "created-at":"2019-03-19T16:50:13.298+01:00",
+         "updated-at":"2019-03-19T16:50:13.298+01:00"
       },
-      "product": {
-        "links": {
-          "self": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/relationships/product",
-          "related": "https://api.nexposit.nl/api/v3/components/eb5ff8cf-74a1-402d-9495-d17ef88ecc14/product"
-        }
+      "relationships":{
+         "company":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/tags/03b970bd-bacd-4e23-ab89-d55cca0159d9/relationships/company",
+               "related":"https://api.nextposit.nl/api/v31/tags/03b970bd-bacd-4e23-ab89-d55cca0159d9/company"
+            }
+         }
       }
-    }
-  }
+   }
 }
 ```
 
@@ -54,7 +43,12 @@ Tags are used to categorize Products or Articles
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
+### Filters
 
+| Parameter                   | Format    |  Partial Matches    |
+| --------------------------- | --------- | ------------------- |
+| created_after               | timestamp |  N/A
+| updated_after               | timestamp |  N/A
 
 ### Relationships
 

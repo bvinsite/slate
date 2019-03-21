@@ -6,38 +6,38 @@
 
 ```json
 {
-    "data": {
-        "id": "0957b78a-1a52-49d2-8a28-7f5d75241114",
-        "type": "products",
-        "links": {
-            "self": "https://api.nexposit.nl/api/v3/products/0957b78a-1a52-49d2-8a28-7f5d75241114"
-        },
-        "attributes": {
-            "description": null,
-            "name": "Spaghetti Bolognese",
-            "plu": "17169ab",
-            "price": 967,
-            "sales-tax-id": "b3081629-ec17-4dac-9764-97e4f4f03256",
-            "sells-by-weight": true,
-            "sku": null,
-            "created-at": "2018-11-02T11:56:50.639+01:00",
-            "updated-at": "2018-11-02T11:56:50.639+01:00"
-        },
-        "relationships": {
-            "company": {
-                "links": {
-                    "self": "https://api.nexposit.nl/api/v3/products/0957b78a-1a52-49d2-8a28-7f5d75241114/relationships/company",
-                    "related": "https://api.nexposit.nl/api/v3/products/0957b78a-1a52-49d2-8a28-7f5d75241114/company"
-                }
-            },
-            "sales-tax": {
-                "links": {
-                    "self": "https://api.nexposit.nl/api/v3/products/0957b78a-1a52-49d2-8a28-7f5d75241114/relationships/sales-tax",
-                    "related": "https://api.nexposit.nl/api/v3/products/0957b78a-1a52-49d2-8a28-7f5d75241114/sales-tax"
-                }
+   "data":{
+      "id":"00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c",
+      "type":"products",
+      "links":{
+         "self":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c"
+      },
+      "attributes":{
+         "description":null,
+         "name":"Megaburgers",
+         "plu":"303",
+         "price":"160.55",
+         "sales-tax-id":"b97fd7c8-c322-4f1a-95ed-b147ea40880b",
+         "sells-by-weight":false,
+         "sku":null,
+         "created-at":"2019-02-07T10:48:49.000+01:00",
+         "updated-at":"2019-03-19T16:50:24.247+01:00"
+      },
+      "relationships":{
+         "company":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/relationships/company",
+               "related":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/company"
             }
-        }
-    }
+         },
+         "sales-tax":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/relationships/sales-tax",
+               "related":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/sales-tax"
+            }
+         }
+      }
+   }
 }
 ```
 
@@ -63,7 +63,9 @@
 | name                        | string    |  Y
 | plu                         | string    |  N
 | sku                         | integer   |  N
+| created_after               | timestamp |  N/A
+| updated_after               | timestamp |  N/A
 
 ### Relationships
 
-* [SalesTax](#salestax)
+* [SalesTax](#salestaxes)

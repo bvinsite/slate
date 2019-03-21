@@ -5,50 +5,50 @@
 
 ```json
 {
-    "data": {
-        "id": "02948a3c-ebd4-4d35-b219-2a7c4a900e79",
-        "type": "orders",
-        "links": {
-            "self": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79"
-        },
-        "attributes": {
-          "attendant": "",
-          "completed-at": "2018-12-03T13:52:05.272+01:00",
-          "customer-address": "Aalbertstraat 972",
-          "customer-city": "Oud Aalbert aan de Rijn",
-          "customer-name": "Bard den Ven",
-          "customer-remark": "",
-          "customer-phone": "",
-          "customer-postal-code": "8042 JL",
-          "delivery-at": null,
-          "number": null,
-          "payment-completed": "2018-12-03T13:51:05.272+01:00",
-          "pickup-at": "2018-12-06T14:00:00.000+01:00",
-          "targeted-at": "2018-12-06T14:00:00.000+01:00",
-          "created-at": "2018-12-03T11:51:05.272+01:00",
-          "updated-at": "2018-12-03T11:51:05.272+01:00"
-        },
-        "relationships": {
-            "company": {
-                "links": {
-                    "self": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79/relationships/company",
-                    "related": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79/company"
-                }
-            },
-            "customer": {
-                "links": {
-                    "self": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79/relationships/customer",
-                    "related": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79/customer"
-                }
-            },
-            "order-lines": {
-                "links": {
-                    "self": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79/relationships/order-lines",
-                    "related": "https://api.nexposit.nl/api/v3/orders/02948a3c-ebd4-4d35-b219-2a7c4a900e79/order-lines"
-                }
+   "data":{
+      "id":"d88e571c-9580-4a47-b980-1a8ce7bcf795",
+      "type":"orders",
+      "links":{
+         "self":"https://api.nextposit.nl/api/v31/orders/d88e571c-9580-4a47-b980-1a8ce7bcf795"
+      },
+      "attributes":{
+         "attendant":"Niek",
+         "completed-at":"2019-03-21T12:07:14.942+01:00",
+         "customer-address":"Geurinklaan 614b",
+         "customer-city":"Oud Thierryveld",
+         "customer-name":"Agnes Beukema",
+         "customer-remark":"",
+         "customer-phone":"034112345678",
+         "customer-postal-code":"1720 YC",
+         "delivery-at":null,
+         "number":1,
+         "payment-completed":null,
+         "pickup-at":"2019-03-22T13:00:00.000+01:00",
+         "targeted-at":"2019-03-22T13:00:00.000+01:00",
+         "created-at":"2019-03-21T12:01:29.975+01:00",
+         "updated-at":"2019-03-21T12:07:14.945+01:00"
+      },
+      "relationships":{
+         "company":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/orders/d88e571c-9580-4a47-b980-1a8ce7bcf795/relationships/company",
+               "related":"https://api.nextposit.nl/api/v31/orders/d88e571c-9580-4a47-b980-1a8ce7bcf795/company"
             }
-        }
-    }
+         },
+         "customer":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/orders/d88e571c-9580-4a47-b980-1a8ce7bcf795/relationships/customer",
+               "related":"https://api.nextposit.nl/api/v31/orders/d88e571c-9580-4a47-b980-1a8ce7bcf795/customer"
+            }
+         },
+         "order-lines":{
+            "links":{
+               "self":"https://api.nextposit.nl/api/v31/orders/d88e571c-9580-4a47-b980-1a8ce7bcf795/relationships/order-lines",
+               "related":"https://api.nextposit.nl/api/v31/orders/d88e571c-9580-4a47-b980-1a8ce7bcf795/order-lines"
+            }
+         }
+      }
+   }
 }
 
 ```
@@ -78,6 +78,7 @@
 | --------------------------- | --------- | ------------------- |
 | completed                   | boolean   |  N/A
 | completed_after             | timestamp |  N/A
+| created_after               | timestamp |  N/A
 | updated_after               | timestamp |  N/A
 
 

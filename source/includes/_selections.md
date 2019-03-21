@@ -53,7 +53,12 @@ Components determine the fixed Products making up an Article.
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
+### Filters
 
+| Parameter                   | Format    |  Partial Matches    |
+| --------------------------- | --------- | ------------------- |
+| created_after               | timestamp |  N/A
+| updated_after               | timestamp |  N/A
 
 ### Relationships
 
