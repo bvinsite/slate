@@ -33,7 +33,7 @@
 | city           | string    |
 | postal-code    | string    |
 | street-address | string    |
-| variant        | enum      | one of [:mailing, :shipping, :visiting]
+| variant        | enum      | one of billing, mailing, shipping, visiting
 | primary        | boolean   | one primary address allowed per variant
 | created-at     | timestamp | *read-only*
 | updated-at     | timestamp | *read-only*
