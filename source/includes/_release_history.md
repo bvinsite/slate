@@ -37,3 +37,26 @@ Implemented a Paged Paginator. The paginator can be selected in the request by i
 
 - page[offset] and page[limit] parameters, or
 - page[number] and page[size] parameters
+
+## v3.1.1
+
+**Date:** 2019-03-21
+
+Bugfix release
+
+### Compatibility
+
+Potential compatibility issues:
+
+- Filters on boolean columns, now return an error when filtering on anything other than [t, f, true, false, 0, 1]
+- Filters on enum fields, now return an error when filtering on strings not in the expected list of options
+
+
+### Bug fixes
+
+  - Fixed crash on created-after filter on some resources
+  - Fixed crash on updated-after filter on some resources
+
+### Features
+
+Implemented primary and variant filters for addresses.

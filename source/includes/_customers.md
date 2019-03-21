@@ -55,11 +55,11 @@
 
 ### Filters
 
-| Parameter                   | Format    |  Partial Matches    |
-| --------------------------- | --------- | ------------------- |
-| email                       | string    |  N
-| name                        | string    |  Y
-| number                      | integer   |  N
+| Parameter                   | Format    |  Partial Matches    |  Allowed values  |
+| --------------------------- | --------- | ------------------- | ---------------- |
+| email                       | string    |  N                  |                  |
+| name                        | string    |  Y                  |                  |
+| number                      | integer   |  N                  |                  |
 
 ### Relationships
 

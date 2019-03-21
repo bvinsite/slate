@@ -71,13 +71,13 @@ Articles add additional information to products required in the rest of the Expo
 
 ### Filters
 
-| Parameter                   | Format    |  Partial Matches    |
-| --------------------------- | --------- | ------------------- |
-| plu                         | string    |  N
-| sku                         | string    |  N
-| name                        | string    |  Y
-| created_after               | timestamp |  N/A
-| updated_after               | timestamp |  N/A
+| Parameter                   | Format    |  Partial Matches    |  Allowed values  |
+| --------------------------- | --------- | ------------------- | ---------------- |
+| plu                         | string    |  N                  |                  |
+| sku                         | string    |  N                  |                  |
+| name                        | string    |  Y                  |                  |
+| created_after               | timestamp |  N/A                |                  |
+| updated_after               | timestamp |  N/A                |                  |
 
 ### Relationships
 

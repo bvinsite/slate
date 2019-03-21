@@ -40,9 +40,9 @@
 
 ### Filters
 
-| Parameter                   | Format    |  Partial Matches    |
-| --------------------------- | --------- | ------------------- |
-| primary                     | boolean   |  N/A
-| variant                     | string    |  N
-| created_after               | timestamp |  N/A
-| updated_after               | timestamp |  N/A
+| Parameter                   | Format    |  Partial Matches    |  Allowed values                      |
+| --------------------------- | --------- | ------------------- | ------------------------------------ |
+| primary                     | boolean   |  N/A                | 1, t, true, 0, f, false              |
+| variant                     | string    |  N                  | billing, mailing, shipping, visiting |
+| created_after               | timestamp |  N/A                |                                      |
+| updated_after               | timestamp |  N/A                |                                      |

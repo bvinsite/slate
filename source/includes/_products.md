@@ -58,13 +58,13 @@
 
 ### Filters
 
-| Parameter                   | Format    |  Partial Matches    |
-| --------------------------- | --------- | ------------------- |
-| name                        | string    |  Y
-| plu                         | string    |  N
-| sku                         | integer   |  N
-| created_after               | timestamp |  N/A
-| updated_after               | timestamp |  N/A
+| Parameter                   | Format    |  Partial Matches    |  Allowed values  |
+| --------------------------- | --------- | ------------------- | ---------------- |
+| name                        | string    |  Y                  |                  |
+| plu                         | string    |  N                  |                  |
+| sku                         | integer   |  N                  |                  |
+| created_after               | timestamp |  N/A                |                  |
+| updated_after               | timestamp |  N/A                |                  |
 
 ### Relationships
 

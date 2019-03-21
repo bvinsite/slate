@@ -74,12 +74,12 @@
 
 ### Filters
 
-| Parameter                   | Format    |  Partial Matches    |
-| --------------------------- | --------- | ------------------- |
-| completed                   | boolean   |  N/A
-| completed_after             | timestamp |  N/A
-| created_after               | timestamp |  N/A
-| updated_after               | timestamp |  N/A
+| Parameter                   | Format    |  Partial Matches    |  Allowed values  |
+| --------------------------- | --------- | ------------------- | ---------------- |
+| completed                   | boolean   |  N/A                |                  |
+| completed_after             | timestamp |  N/A                |                  |
+| created_after               | timestamp |  N/A                |                  |
+| updated_after               | timestamp |  N/A                |                  |
 
 
 ### Relationships

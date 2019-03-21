@@ -38,10 +38,10 @@ SalesTax is a a read-only resource
 
 ### Filters
 
-| Parameter                   | Format    |  Partial Matches    |
-| --------------------------- | --------- | ------------------- |
-| created_after               | timestamp |  N/A
-| updated_after               | timestamp |  N/A
+| Parameter                   | Format    |  Partial Matches    |  Allowed values  |
+| --------------------------- | --------- | ------------------- | ---------------- |
+| created_after               | timestamp |  N/A                |                  |
+| updated_after               | timestamp |  N/A                |                  |
 
 ### Relationships
 
