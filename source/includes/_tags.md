@@ -37,9 +37,10 @@ Tags are used to categorize Articles
 
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
-| count                       | integer   |  when defined, weight must be null
-| fixed-price                 | float     |  pre-tax price, overrides calculated price of underlying products
-| weight                      | integer   |  when defined, count must be null
+| description                 | string    |
+| name                        | string    |
+| primary                     | boolean   |  primary tags are displayed more prominently
+| rank                        | integer   |  used to order tags
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
@@ -52,5 +53,4 @@ Tags are used to categorize Articles
 
 ### Relationships
 
-* [Article](#articles)
-* [Product](#products)
+* [Company](#companies)
