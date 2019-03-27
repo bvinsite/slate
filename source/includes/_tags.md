@@ -1,6 +1,6 @@
 ## Tags
 
-Tags are used to categorize Products or Articles
+Tags are used to categorize Articles
 
 
 > Example Tag
