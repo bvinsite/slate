@@ -86,3 +86,79 @@ Articles add additional information to products required in the rest of the Expo
 * [Components](#components)
 * [Selections](#selections)
 * [Tags](#tags)
+
+### Examples
+
+__Create an article with price including sales_tax__
+
+Assuming SalesTax has a tax percentage 9:
+
+POST an article with an associated tax rate
+
+
+<div class="center-column"></div>
+```
+POST /api/v3/articles
+```
+
+<div class="center-column"></div>
+```json
+{
+  "data": {
+    "type": "articles",
+    "attributes": {
+      "plu": "1000001",
+      "name": "Test Article I",
+    },
+    "relationships": {
+      "sales-tax": {
+        "data": {
+          "type": "sales-taxes",
+          "id": "acc97298-ab78-498f-82f6-73d8e9c803bd"
+        }
+      }
+    }
+  }
+}
+```
+
+PATCH the article with it's price including taxes
+
+<div class="center-column"></div>
+```
+PATCH /api/v3/articles/d8b55c93-6c08-4a57-a67f-d0a0dc52a288
+```
+<div class="center-column"></div>
+```json
+{
+  "data": {
+    "id": "d8b55c93-6c08-4a57-a67f-d0a0dc52a288",
+    "type": "articles",
+    "attributes": {
+      "fixed-base-price-with-tax": 1090
+    }
+  }
+}
+```
+
+Results in the following article
+
+<div class="center-column"></div>
+```json
+{
+  "data": {
+    "id": "d95e8ced-f845-48db-be9d-2278c42ff30c",
+    ...
+    "attributes": {
+      "fixed-base-price": "1000.0",
+      "fixed-base-price-with-tax": 1090,
+      ...
+    },
+    "relationships": {
+      ...
+      }
+    }
+  },
+  "meta": {...}
+}
+```

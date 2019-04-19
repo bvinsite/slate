@@ -80,9 +80,47 @@
 | completed_after             | timestamp |  N/A                |                  |
 | created_after               | timestamp |  N/A                |                  |
 | updated_after               | timestamp |  N/A                |                  |
+| number                      | string    |  No                 |                  |
+
 
 
 ### Relationships
 
 * [Customer](#customers)
 * [OrderLines](#orderlines)
+
+### Examples
+
+__ Create an order associated with an existing Customer__
+
+Given an exising Customer with id 00b9d647-07ac-4f0d-97c9-5af00071e77d
+
+
+POST an order with the associated customer
+
+<div class="center-column"></div>
+```
+POST '/api/v3/orders'
+```
+
+
+<div class="center-column"></div>
+```json
+{
+  "data": {
+    "type": "orders",
+    "attributes": {
+      "number": "71",
+      "payment-completed": false
+    },
+    "relationships": {
+      "customer": {
+        "data": {
+          "type": "customers",
+          "id": "00b9d647-07ac-4f0d-97c9-5af00071e77d"
+        }
+      }
+    }
+  }
+}
+```

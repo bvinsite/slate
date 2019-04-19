@@ -1,0 +1,10 @@
+.content {
+  .center-column + pre {
+    position: static;
+    float: none;
+    clear: none;
+    margin: 0 28px;
+    left: 0;
+    width: 45%;
+  }
+}

@@ -51,7 +51,7 @@
 
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
-| article-plu                 | integer   |
+| article-plu                 | string    |
 | count                       | integer   |
 | customer-remark             | string    |
 | total-price                 | decimal   | pre-tax price in cents, total-price is unit-price times count
