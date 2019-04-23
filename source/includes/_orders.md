@@ -91,7 +91,7 @@
 
 ### Examples
 
-__ Create an order associated with an existing Customer__
+__Create an order associated with an existing Customer__
 
 Given an exising Customer with id 00b9d647-07ac-4f0d-97c9-5af00071e77d
 
