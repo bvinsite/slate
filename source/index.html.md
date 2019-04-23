@@ -1,5 +1,5 @@
 ---
-title: Exposit API (v3.1.1)
+title: Exposit API (v3.1.2)
 
 language_tabs: # must be one of https://git.io/vQNgJ
 
