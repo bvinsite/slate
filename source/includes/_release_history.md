@@ -60,3 +60,19 @@ Potential compatibility issues:
 ### Features
 
 Implemented primary and variant filters for addresses.
+
+## v3.1.2
+
+**Date:** 2019-04-19
+
+Extra documentation
+
+## v3.1.3
+
+**Date:** 2019-05-1
+
+Feature release
+
+### Features
+
+Implemented name filter for tags and added attribute unit_name for articles.
