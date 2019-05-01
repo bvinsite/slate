@@ -41,6 +41,9 @@ Tags are used to categorize Articles
 | name                        | string    |
 | primary                     | boolean   |  primary tags are displayed more prominently
 | rank                        | integer   |  used to order tags
+| count                       | integer   |  when defined, weight must be null
+| fixed-price                 | float     |  pre-tax price, overrides calculated price of underlying products
+| weight                      | integer   |  when defined, count must be null
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
@@ -48,6 +51,7 @@ Tags are used to categorize Articles
 
 | Parameter                   | Format    |  Partial Matches    |  Allowed values  |
 | --------------------------- | --------- | ------------------- | ---------------- |
+| name                        | string    |  N                  |                  |
 | created_after               | timestamp |  N/A                |                  |
 | updated_after               | timestamp |  N/A                |                  |
 

@@ -16,6 +16,7 @@ Articles add additional information to products required in the rest of the Expo
          "fixed-base-price":"3022.94",
          "fixed-base-price-with-tax":3295,
          "name":"Smulsteen Mixed Grill Trio",
+         "unit_name": null,
          "sku":null,
          "plu":"1733",
          "created-at":"2019-02-11T14:03:40.000+01:00",
@@ -64,6 +65,7 @@ Articles add additional information to products required in the rest of the Expo
 | fixed-base-price            | decimal   |  pre-tax price in cents, overrides calculated price of underlying products
 | fixed-base-price-with-tax   | integer   |  tax price in cents
 | name                        | string    | *required*
+| unit_name                   | string    |
 | sku                         | string    |
 | plu                         | string    | *required, unique*
 | created-at                  | timestamp | *read-only*
