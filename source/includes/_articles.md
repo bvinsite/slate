@@ -66,6 +66,7 @@ Articles add additional information to products required in the rest of the Expo
 | fixed-base-price-with-tax   | integer   |  tax price in cents
 | name                        | string    | *required*
 | unit_name                   | string    |
+| sells-by-weight?            | boolean   | *read-only*
 | sku                         | string    |
 | plu                         | string    | *required, unique*
 | created-at                  | timestamp | *read-only*

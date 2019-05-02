@@ -1,5 +1,26 @@
 # Release History
 
+## v3.1.4
+
+**Date:** 2019-05-2
+
+Feature release
+
+### Features
+
+Added the read-only attribute sells-by-weight? to Article resource
+
+
+## v3.1.3
+
+**Date:** 2019-05-1
+
+Feature release
+
+### Features
+
+Implemented name filter for tags and added attribute unit_name for articles.
+
 ## v3.1.2
 
 **Date:** 2019-04-19
