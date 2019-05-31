@@ -2,6 +2,12 @@
 
 ## v3.1.4
 
+**Date:** 2019-05-31
+
+Added article-name to order-line resource
+
+## v3.1.4
+
 **Date:** 2019-05-2
 
 Feature release

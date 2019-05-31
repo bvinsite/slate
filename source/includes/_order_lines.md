@@ -51,6 +51,7 @@
 
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
+| article-name                | string    |
 | article-plu                 | string    |
 | count                       | integer   |
 | customer-remark             | string    |
