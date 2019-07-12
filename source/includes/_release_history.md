@@ -1,6 +1,12 @@
 # Release History
 
-## v3.1.4
+## v3.1.6
+
+**Date:** 2019-07-12
+
+Added external reference to order
+
+## v3.1.5
 
 **Date:** 2019-05-31
 

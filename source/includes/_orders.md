@@ -21,6 +21,7 @@
          "customer-phone":"034112345678",
          "customer-postal-code":"1720 YC",
          "delivery-at":null,
+         "external-refernce":"AF23b6",
          "number":1,
          "payment-completed":null,
          "pickup-at":"2019-03-22T13:00:00.000+01:00",
@@ -66,7 +67,8 @@
 | customer-phone              | string    |
 | customer-postal-code        | string    |
 | delivery-at                 | timestamp | Indicates the time for order delivery. When defined, pickup-at must be null
-| number                      | integer   |
+| customer-postal-code        | string    |
+| external-refer nce          | string    | Reference to the order number in external system
 | payment-completed           | timestamp | Indicates the time for completing an only payment
 | pickup-at                   | timestamp | Indicates the time for order pickup. When defined, delivery-at must be null
 | created-at                  | timestamp | *read-only*
