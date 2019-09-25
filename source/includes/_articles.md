@@ -16,7 +16,7 @@ Articles add additional information to products required in the rest of the Expo
          "fixed-base-price":"3022.94",
          "fixed-base-price-with-tax":3295,
          "name":"Smulsteen Mixed Grill Trio",
-         "unit_name": null,
+         "unit-name": null,
          "sku":null,
          "plu":"1733",
          "created-at":"2019-02-11T14:03:40.000+01:00",
@@ -65,10 +65,13 @@ Articles add additional information to products required in the rest of the Expo
 | fixed-base-price            | decimal   |  pre-tax price in cents, overrides calculated price of underlying products
 | fixed-base-price-with-tax   | integer   |  tax price in cents
 | name                        | string    | *required*
-| unit_name                   | string    |
+| offer-price-ends-at         | timestamp | Offer price valid from
+| offer-price-starts-at       | timestamp | Offer price valid until
+| offer-price-with-tax        | integer   | Offer price in cents
+| plu                         | string    | *required, unique*
 | sells-by-weight             | boolean   | *read-only*
 | sku                         | string    |
-| plu                         | string    | *required, unique*
+| unit-name                   | string    |
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
@@ -79,8 +82,8 @@ Articles add additional information to products required in the rest of the Expo
 | plu                         | string    |  N                  |                  |
 | sku                         | string    |  N                  |                  |
 | name                        | string    |  Y                  |                  |
-| created_after               | timestamp |  N/A                |                  |
-| updated_after               | timestamp |  N/A                |                  |
+| created-after               | timestamp |  N/A                |                  |
+| updated-after               | timestamp |  N/A                |                  |
 
 ### Relationships
 

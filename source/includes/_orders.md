@@ -67,8 +67,8 @@
 | customer-phone              | string    |
 | customer-postal-code        | string    |
 | delivery-at                 | timestamp | Indicates the time for order delivery. When defined, pickup-at must be null
-| customer-postal-code        | string    |
-| external-refer nce          | string    | Reference to the order number in external system
+| external-reference          | string    | Reference to id in external systems
+| number                      | integer   | *unique* Order number
 | payment-completed           | timestamp | Indicates the time for completing an only payment
 | pickup-at                   | timestamp | Indicates the time for order pickup. When defined, delivery-at must be null
 | created-at                  | timestamp | *read-only*
@@ -79,10 +79,11 @@
 | Parameter                   | Format    |  Partial Matches    |  Allowed values  |
 | --------------------------- | --------- | ------------------- | ---------------- |
 | completed                   | boolean   |  N/A                |                  |
-| completed_after             | timestamp |  N/A                |                  |
-| created_after               | timestamp |  N/A                |                  |
-| updated_after               | timestamp |  N/A                |                  |
+| completed-after             | timestamp |  N/A                |                  |
+| created-after               | timestamp |  N/A                |                  |
+| external-reference          | string    |  No                 |                  |
 | number                      | string    |  No                 |                  |
+| updated-after               | timestamp |  N/A                |                  |
 
 
 

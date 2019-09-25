@@ -38,12 +38,9 @@ Tags are used to categorize Articles
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
 | description                 | string    |
-| name                        | string    |
+| name                        | string    |  *unique*
 | primary                     | boolean   |  primary tags are displayed more prominently
 | rank                        | integer   |  used to order tags
-| count                       | integer   |  when defined, weight must be null
-| fixed-price                 | float     |  pre-tax price, overrides calculated price of underlying products
-| weight                      | integer   |  when defined, count must be null
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 
@@ -52,8 +49,8 @@ Tags are used to categorize Articles
 | Parameter                   | Format    |  Partial Matches    |  Allowed values  |
 | --------------------------- | --------- | ------------------- | ---------------- |
 | name                        | string    |  N                  |                  |
-| created_after               | timestamp |  N/A                |                  |
-| updated_after               | timestamp |  N/A                |                  |
+| created-after               | timestamp |  N/A                |                  |
+| updated-after               | timestamp |  N/A                |                  |
 
 ### Relationships
 

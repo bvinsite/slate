@@ -63,8 +63,8 @@
 | name                        | string    |  Y                  |                  |
 | plu                         | string    |  N                  |                  |
 | sku                         | integer   |  N                  |                  |
-| created_after               | timestamp |  N/A                |                  |
-| updated_after               | timestamp |  N/A                |                  |
+| created-after               | timestamp |  N/A                |                  |
+| updated-after               | timestamp |  N/A                |                  |
 
 ### Relationships
 

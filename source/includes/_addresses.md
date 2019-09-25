@@ -44,5 +44,5 @@
 | --------------------------- | --------- | ------------------- | ------------------------------------ |
 | primary                     | boolean   |  N/A                | 1, t, true, 0, f, false              |
 | variant                     | string    |  N                  | billing, mailing, shipping, visiting |
-| created_after               | timestamp |  N/A                |                                      |
-| updated_after               | timestamp |  N/A                |                                      |
+| created-after               | timestamp |  N/A                |                                      |
+| updated-after               | timestamp |  N/A                |                                      |

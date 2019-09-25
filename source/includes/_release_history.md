@@ -1,5 +1,29 @@
 # Release History
 
+## v3.1.8
+
+**Date:** 2019-09-13
+
+Feature release
+
+Added offer related attributes to article resource
+
+## v3.1.7
+
+**Date:** 2019-07-16
+
+Feature release
+
+### Features
+
+Implemented external_reference filter for order
+
+### Fixes
+
+Doc Fix: Corrected some incorrectly documented fields from underscores to hypens. (created_at to created-at)
+Doc Fix: Added missing uniqueness info to some resources
+
+
 ## v3.1.6
 
 **Date:** 2019-07-12

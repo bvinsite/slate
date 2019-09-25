@@ -47,8 +47,8 @@
 
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
-| email                       | string    |
-| name                        | string    |
+| email                       | string    | *unique*
+| name                        | string    | *unique*
 | number                      | integer   | Unique customer number
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
