@@ -1,5 +1,13 @@
 # Release History
 
+## v3.1.9
+
+**Date:** 2019-09-30
+
+Feature release
+
+Added external reference to Tag
+
 ## v3.1.8
 
 **Date:** 2019-09-13

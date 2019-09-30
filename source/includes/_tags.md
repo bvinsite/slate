@@ -15,6 +15,7 @@ Tags are used to categorize Articles
       },
       "attributes":{
          "description":null,
+         "external-reference":null,
          "name":"soepen",
          "primary":null,
          "rank":null,
@@ -38,6 +39,7 @@ Tags are used to categorize Articles
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
 | description                 | string    |
+| external-reference          | string    | Reference to id in external systems
 | name                        | string    |  *unique*
 | primary                     | boolean   |  primary tags are displayed more prominently
 | rank                        | integer   |  used to order tags
