@@ -48,7 +48,8 @@
 | description                 | string    |
 | name                        | string    | *required*
 | plu                         | string    | *required, unique*
-| price                       | float     | price before tax
+| price                       | float     | price before tax in cents
+| price-with-tax              | float     | price
 | sales-tax-id                | uuid      | id of an existing SalesTax
 | sells-by-weight             | boolean   |
 | sku                         | integer   |
@@ -69,3 +70,80 @@
 ### Relationships
 
 * [SalesTax](#salestaxes)
+
+
+### Examples
+
+__Create an product with price including sales_tax__
+
+Assuming SalesTax has a tax percentage 9:
+
+POST an product with an associated tax rate
+
+
+<div class="center-column"></div>
+```
+POST /api/v3/products
+```
+
+<div class="center-column"></div>
+```json
+{
+  "data": {
+    "type": "products",
+    "attributes": {
+      "plu": "1000001",
+      "name": "Test Article I",
+    },
+    "relationships": {
+      "sales-tax": {
+        "data": {
+          "type": "sales-taxes",
+          "id": "acc97298-ab78-498f-82f6-73d8e9c803bd"
+        }
+      }
+    }
+  }
+}
+```
+
+PATCH the product with it's price including taxes
+
+<div class="center-column"></div>
+```
+PATCH /api/v3/products/d8b55c93-6c08-4a57-a67f-d0a0dc52a288
+```
+<div class="center-column"></div>
+```json
+{
+  "data": {
+    "id": "d8b55c93-6c08-4a57-a67f-d0a0dc52a288",
+    "type": "products",
+    "attributes": {
+      "price-with-tax": 1090
+    }
+  }
+}
+```
+
+Results in the following product
+
+<div class="center-column"></div>
+```json
+{
+  "data": {
+    "id": "d95e8ced-f845-48db-be9d-2278c42ff30c",
+    ...
+    "attributes": {
+      "price": "1000.0",
+      "price-with-tax": 1090,
+      ...
+    },
+    "relationships": {
+      ...
+      }
+    }
+  },
+  "meta": {...}
+}
+```

@@ -1,5 +1,16 @@
 # Release History
 
+## v3.1.10
+
+**Date:** 2019-10-28
+
+Feature release
+
+Made sells-by-weight a read/write attribute on the article resource
+Added a price-with-tax attribute to the product resource
+
+# Release History
+
 ## v3.1.9
 
 **Date:** 2019-09-30

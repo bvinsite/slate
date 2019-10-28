@@ -62,14 +62,14 @@ Articles add additional information to products required in the rest of the Expo
 
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
-| fixed-base-price            | decimal   |  pre-tax price in cents, overrides calculated price of underlying products
-| fixed-base-price-with-tax   | integer   |  tax price in cents
+| fixed-base-price            | decimal   | pre-tax price in cents, overrides calculated price of underlying products
+| fixed-base-price-with-tax   | integer   | tax price in cents
 | name                        | string    | *required*
 | offer-price-ends-at         | timestamp | Offer price valid from
 | offer-price-starts-at       | timestamp | Offer price valid until
 | offer-price-with-tax        | integer   | Offer price in cents
 | plu                         | string    | *required, unique*
-| sells-by-weight             | boolean   | *read-only*
+| sells-by-weight             | boolean   |
 | sku                         | string    |
 | unit-name                   | string    |
 | created-at                  | timestamp | *read-only*
