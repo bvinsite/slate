@@ -11,6 +11,7 @@ toc_footers:
 includes:
   - introduction
   - jsonapi_overview
+  - authentication
   - requests
   - versioning
   - addresses
