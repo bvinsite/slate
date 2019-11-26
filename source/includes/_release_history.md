@@ -1,5 +1,14 @@
 # Release History
 
+## v3.1.11
+
+**Date:** 2019-11-26
+
+Bug fix
+
+Fixed created-after and updated-after filters.
+The timezone did not work.
+
 ## v3.1.10
 
 **Date:** 2019-10-28
