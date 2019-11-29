@@ -1,13 +1,24 @@
 # Release History
 
-## v3.1.11
+## v3.1.12
 
 **Date:** 2019-11-29
 
+Bugfix release
+
 ### Bug fixes
 
-  - Fixes created_after/updated_after filter interaction with timezones
-  - Increases returned timestamp precision to microseconds
+  - Increases response timestamp precision to microseconds
+
+## v3.1.11
+
+**Date:** 2019-11-26
+
+Bugfix release
+
+### Bug fixes
+
+  - Fixes incorrect filtering for created_after/updated_after with some timezones.
 
 ## v3.1.10
 
