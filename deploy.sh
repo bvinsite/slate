@@ -215,6 +215,6 @@
 # fi
 
 
-echo "Just do:"
+echo "# Just do:"
 echo "   bundle exec middleman build --clean && \\"
 echo "   scp -r ./build/* deploy@apidocs.nextposit.nl:/srv/www/apidocs.nextposit.nl/public/"
