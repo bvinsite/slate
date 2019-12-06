@@ -62,6 +62,8 @@ Articles add additional information to products required in the rest of the Expo
 
 | Name                        | Format    |  Description        |
 | --------------------------- | --------- | ------------------- |
+| fixed-base-price            | decimal   | *read-only*
+| fixed-base-price-with-tax   | integer   | *read-only*
 | fixed-base-price            | decimal   | pre-tax price in cents, overrides calculated price of underlying products
 | fixed-base-price-with-tax   | integer   | tax price in cents
 | name                        | string    | *required*
