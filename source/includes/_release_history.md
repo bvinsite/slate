@@ -1,5 +1,14 @@
 # Release History
 
+## v3.1.13
+
+**Date:** 2020-11-06
+
+Feature release
+
+Added components-price to articles
+Added components-price-with-tax to articles
+
 ## v3.1.12
 
 **Date:** 2019-11-29
