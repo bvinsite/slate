@@ -6,8 +6,8 @@
 
 Feature release
 
-Added components-price to articles
-Added components-price-with-tax to articles
+- Added components-price to articles
+- Added components-price-with-tax to articles
 
 ## v3.1.12
 

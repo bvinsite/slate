@@ -64,7 +64,7 @@ Articles add additional information to products required in the rest of the Expo
 | --------------------------- | --------- | ------------------- |
 | base-price                  | decimal   | *read-only* current base price (without additional selections)
 | base-price-with-tax         | integer   | *read-only*
-| components-price            | decimal   | *read-only* price of underlying product(s)
+| components-price            | decimal   | *read-only* price of underlying component(s)
 | components-price-with-tax   | integer   | *read-only*
 | fixed-base-price            | decimal   | pre-tax price in cents, overrides calculated price of underlying products
 | fixed-base-price-with-tax   | integer   | tax price in cents
