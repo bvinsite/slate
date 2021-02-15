@@ -1,5 +1,14 @@
 # Release History
 
+## v3.1.14
+
+**Date:** 2021-02-15
+
+Feature release
+
+- Added base-price to articles
+- Added base-price-with-tax to articles
+
 ## v3.1.13
 
 **Date:** 2020-11-06
