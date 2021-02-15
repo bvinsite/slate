@@ -6,8 +6,8 @@
 
 Feature release
 
-- Added base-price to articles
-- Added base-price-with-tax to articles
+- Added normal-price to articles
+- Added normal-price-with-tax to articles
 
 ## v3.1.13
 
