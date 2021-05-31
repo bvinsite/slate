@@ -1,5 +1,14 @@
 # Release History
 
+## v3.1.15
+
+**Date:** 2021-02-15
+
+Feature release
+
+- Added assets endpoint
+- Added article - asset reference
+
 ## v3.1.14
 
 **Date:** 2021-02-15

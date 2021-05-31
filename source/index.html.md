@@ -1,5 +1,5 @@
 ---
-title: Exposit API (v3.1.14)
+title: Exposit API (v3.1.15)
 
 language_tabs: # must be one of https://git.io/vQNgJ
 
@@ -16,6 +16,7 @@ includes:
   - versioning
   - addresses
   - articles
+  - assets
   - components
   - customers
   - orders
