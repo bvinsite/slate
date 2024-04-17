@@ -1,5 +1,15 @@
 # Release History
 
+## v3.1.16
+
+**Date:** 2024-04-17
+
+Feature release
+
+- Added text-allergens to products
+- Added text-allergen_traces to products
+- Added text-ingredients to products
+
 ## v3.1.15
 
 **Date:** 2021-02-15

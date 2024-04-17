@@ -52,6 +52,9 @@
 | price-with-tax              | float     | price
 | sales-tax-id                | uuid      | id of an existing SalesTax
 | sells-by-weight             | boolean   |
+| text-allergens              | string    |
+| text-allergen_traces        | string    |
+| text-ingredients            | string    |
 | sku                         | integer   |
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
