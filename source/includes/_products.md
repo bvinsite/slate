@@ -6,38 +6,51 @@
 
 ```json
 {
-   "data":{
-      "id":"00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c",
-      "type":"products",
-      "links":{
-         "self":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c"
-      },
-      "attributes":{
-         "description":null,
-         "name":"Megaburgers",
-         "plu":"303",
-         "price":"160.55",
-         "sales-tax-id":"b97fd7c8-c322-4f1a-95ed-b147ea40880b",
-         "sells-by-weight":false,
-         "sku":null,
-         "created-at":"2019-02-07T10:48:49.000+01:00",
-         "updated-at":"2019-03-19T16:50:24.247+01:00"
-      },
-      "relationships":{
-         "company":{
-            "links":{
-               "self":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/relationships/company",
-               "related":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/company"
+    "data": {
+        "id": "000ab790-2391-4e2f-abec-f3aca9e0fe8f",
+        "type": "products",
+        "links": {
+            "self": "https://api.nextposit.nl/api/v31/products/000ab790-2391-4e2f-abec-f3aca9e0fe8f"
+        },
+        "attributes": {
+            "description": null,
+            "name": "Tomatensap",
+            "plu": "1083",
+            "price": "127.52",
+            "price-with-tax": 139,
+            "sales-tax-id": "a6554faf-3c23-4010-b3fa-f951b491268f",
+            "sells-by-weight": false,
+            "sku": "ST",
+            "text-allergens": null,
+            "text-allergen-traces": null,
+            "text-ingredients": null,
+            "discarded-at": null,
+            "created-at": "2021-11-05T15:52:26.281659+01:00",
+            "updated-at": "2023-10-03T11:56:20.056474+02:00"
+        },
+        "relationships": {
+            "company": {
+                "links": {
+                    "self": "https://api.nextposit.nl/api/v31/products/000ab790-2391-4e2f-abec-f3aca9e0fe8f/relationships/company",
+                    "related": "https://api.nextposit.nl/api/v31/products/000ab790-2391-4e2f-abec-f3aca9e0fe8f/company"
+                }
+            },
+            "sales-tax": {
+                "links": {
+                    "self": "https://api.nextposit.nl/api/v31/products/000ab790-2391-4e2f-abec-f3aca9e0fe8f/relationships/sales-tax",
+                    "related": "https://api.nextposit.nl/api/v31/products/000ab790-2391-4e2f-abec-f3aca9e0fe8f/sales-tax"
+                }
             }
-         },
-         "sales-tax":{
-            "links":{
-               "self":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/relationships/sales-tax",
-               "related":"https://api.nextposit.nl/api/v31/products/00f3b8cd-a0fa-4ba2-a95a-3d3799957c6c/sales-tax"
-            }
-         }
-      }
-   }
+        }
+    },
+    "meta": {
+        "info": {
+            "version": "v3.1.17",
+            "publisher": "Bon Vivant In-site",
+            "documentation": "https://apidocs.nextposit.nl/",
+            "email": "apiteam@exposit.nl"
+        }
+    }
 }
 ```
 
@@ -48,14 +61,15 @@
 | description                 | string    |
 | name                        | string    | *required*
 | plu                         | string    | *required, unique*
-| price                       | float     | price before tax in cents
-| price-with-tax              | float     | price
-| sales-tax-id                | uuid      | id of an existing SalesTax
+| price                       | float     | Price before tax in cents
+| price-with-tax              | float     | Price
+| sales-tax-id                | uuid      | An existing SalesTax uuid
 | sells-by-weight             | boolean   |
+| sku                         | integer   |
 | text-allergens              | string    |
 | text-allergen_traces        | string    |
 | text-ingredients            | string    |
-| sku                         | integer   |
+| discarded-at                | timestamp | Made obsolete at this time
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
 

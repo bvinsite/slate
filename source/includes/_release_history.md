@@ -1,5 +1,12 @@
 # Release History
 
+## v3.1.17
+
+**Date:** 2024-05-06
+
+Feature release
+- Added preparation-advice to article resource
+
 ## v3.1.16
 
 **Date:** 2024-04-17
@@ -7,7 +14,7 @@
 Feature release
 
 - Added text-allergens to products
-- Added text-allergen_traces to products
+- Added text-allergen-traces to products
 - Added text-ingredients to products
 
 ## v3.1.15
