@@ -1,5 +1,18 @@
 # Release History
 
+## v3.1.18
+
+**Date:** 2024-05-06
+
+Feature release
+- Added origin to products resource
+- Added energy to products resource
+- Added fats to products resource
+- Added carbo-hydrates to products resource
+- Added sugars to products resource
+- Added proteins to products resource
+- Added salt to products resource
+
 ## v3.1.17
 
 **Date:** 2024-05-06

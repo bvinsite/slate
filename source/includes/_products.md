@@ -15,6 +15,7 @@
         "attributes": {
             "description": null,
             "name": "Tomatensap",
+            "origin": null,
             "plu": "1083",
             "price": "127.52",
             "price-with-tax": 139,
@@ -24,6 +25,12 @@
             "text-allergens": null,
             "text-allergen-traces": null,
             "text-ingredients": null,
+            "energy": null,
+            "fats": null,
+            "carbo-hydrates": null,
+            "sugars": null,
+            "proteins": null,
+            "salt": null,
             "discarded-at": null,
             "created-at": "2021-11-05T15:52:26.281659+01:00",
             "updated-at": "2023-10-03T11:56:20.056474+02:00"
@@ -45,13 +52,14 @@
     },
     "meta": {
         "info": {
-            "version": "v3.1.17",
+            "version": "v3.1.18",
             "publisher": "Bon Vivant In-site",
             "documentation": "https://apidocs.nextposit.nl/",
             "email": "apiteam@exposit.nl"
         }
     }
 }
+
 ```
 
 ### Attributes
@@ -60,6 +68,7 @@
 | --------------------------- | --------- | ------------------- |
 | description                 | string    |
 | name                        | string    | *required*
+| origin                      | string    | Country or region of origin
 | plu                         | string    | *required, unique*
 | price                       | float     | Price before tax in cents
 | price-with-tax              | float     | Price
@@ -69,6 +78,12 @@
 | text-allergens              | string    |
 | text-allergen_traces        | string    |
 | text-ingredients            | string    |
+| energy                      | integer   | In kJ per 100g/ 100ml
+| fats                        | integer   | In gram per 100g/ 100ml
+| carbo-hydrates              | integer   | In gram per 100g/ 100ml
+| sugars                      | integer   | In gram per 100g/ 100ml
+| proteins                    | integer   | In gram per 100g/ 100ml
+| salt                        | integer   | In gram per 100g/ 100ml
 | discarded-at                | timestamp | Made obsolete at this time
 | created-at                  | timestamp | *read-only*
 | updated-at                  | timestamp | *read-only*
