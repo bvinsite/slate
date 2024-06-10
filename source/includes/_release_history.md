@@ -5,6 +5,7 @@
 **Date:** 2024-05-06
 
 Feature release
+
 - Added origin to products resource
 - Added energy to products resource
 - Added fats to products resource
@@ -18,6 +19,7 @@ Feature release
 **Date:** 2024-05-06
 
 Feature release
+
 - Added preparation-advice to article resource
 
 ## v3.1.16
