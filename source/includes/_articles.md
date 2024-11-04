@@ -17,20 +17,27 @@ Articles add additional information to products required in the rest of the Expo
             "base-price-with-tax": 0,
             "components-price": 0,
             "components-price-with-tax": 0,
+            "conservation-advice": "",
             "description": null,
             "fixed-base-price": null,
             "fixed-base-price-with-tax": null,
+            "in_shop": false,
+            "max": null,
+            "min": null,
             "name": "Courgette",
             "normal-price": 0,
             "normal-price-with-tax": 0,
             "offer-price-ends-at": null,
             "offer-price-starts-at": null,
             "offer-price-with-tax": null,
+            "orderable-ends-at": null,
+            "orderable-starts-at": "2024-06-26",
             "sales-tax-id": "a6554faf-3c23-4010-b3fa-f951b491268f",
             "sells-by-weight": null,
             "preparation-advice": null,
             "plu": "541",
             "sku": null,
+            "step": null,
             "unit-name": null,
             "discarded-at": null,
             "created-at": "2024-05-01T09:03:28.125374+02:00",
@@ -95,20 +102,27 @@ Articles add additional information to products required in the rest of the Expo
 | base-price-with-tax         | integer   | *read-only*
 | components-price            | decimal   | *read-only* price of underlying component(s)
 | components-price-with-tax   | integer   | *read-only*
+| conservation-advice         | string    | Advice on storing and conserving this article
 | description                 | string    | Description of the item
 | fixed-base-price            | decimal   | Pre-tax price in cents, overrides calculated price of underlying products
 | fixed-base-price-with-tax   | integer   | Tax price in cents
+| in_shop                     | boolean   | article available to show in webshop(s)
+| max                         | integer   | maximum weight/number per orderline in webshop(s)
+| min                         | integer   | minimum weight/number per orderline in webshop(s)
 | name                        | string    | *required*
 | normal-price                | decimal   | *read-only* price before taking into account offers
 | normal-price-with-tax       | integer   | *read-only*
 | offer-price-ends-at         | timestamp | Offer price valid from
 | offer-price-starts-at       | timestamp | Offer price valid until
 | offer-price-with-tax        | integer   | Offer price in cents
+| orderable-ends-at           | date      | End of availability in the webshop
+| orderable-starts-at         | date      | Start of availability in the webshop
 | preparation-advice          | string    | May include html mark-up
 | plu                         | string    | *required, unique*
 | sales-tax-id                | boolean   | An existing SalesTax uuid
 | sells-by-weight             | boolean   |
 | sku                         | string    |
+| step                        | integer   | size of weight/number steps in webshop(s)
 | unit-name                   | string    |
 | discarded-at                | timestamp | Resource made obsolete at this time
 | created-at                  | timestamp | *read-only*

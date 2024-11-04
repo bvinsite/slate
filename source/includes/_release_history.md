@@ -1,5 +1,36 @@
 # Release History
 
+
+## v3.1.19
+
+**Date:** 2024-10-29
+
+Feature release
+
+- Added min to articles
+- Added max to articles
+- Added step to articles
+- Added ins_shop to articles
+
+Bugfix
+
+- Docs: fixed typo in products documentation
+
+## v3.1.19
+
+**Date:** 2024-06-26
+
+Feature release
+
+- Added oconservation-advice to articles resource
+- Added orderable_ends_at to articles resource
+- Added orderable_starts_at to articles resource
+
+Bugfix
+
+- Docs: fixed typo in products documentation
+
+
 ## v3.1.18
 
 **Date:** 2024-05-06

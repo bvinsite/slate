@@ -60,6 +60,7 @@
     }
 }
 
+
 ```
 
 ### Attributes
@@ -76,7 +77,7 @@
 | sells-by-weight             | boolean   |
 | sku                         | integer   |
 | text-allergens              | string    |
-| text-allergen_traces        | string    |
+| text-allergen-traces        | string    |
 | text-ingredients            | string    |
 | energy                      | integer   | In kJ per 100g/ 100ml
 | fats                        | integer   | In gram per 100g/ 100ml
