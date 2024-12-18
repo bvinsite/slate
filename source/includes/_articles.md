@@ -21,7 +21,7 @@ Articles add additional information to products required in the rest of the Expo
             "description": null,
             "fixed-base-price": null,
             "fixed-base-price-with-tax": null,
-            "in_shop": false,
+            "in-shop": false,
             "max": null,
             "min": null,
             "name": "Courgette",
@@ -106,7 +106,7 @@ Articles add additional information to products required in the rest of the Expo
 | description                 | string    | Description of the item
 | fixed-base-price            | decimal   | Pre-tax price in cents, overrides calculated price of underlying products
 | fixed-base-price-with-tax   | integer   | Tax price in cents
-| in_shop                     | boolean   | article available to show in webshop(s)
+| in-shop                     | boolean   | article available to show in webshop(s)
 | max                         | integer   | maximum weight/number per orderline in webshop(s)
 | min                         | integer   | minimum weight/number per orderline in webshop(s)
 | name                        | string    | *required*
