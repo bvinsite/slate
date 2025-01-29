@@ -21,6 +21,7 @@ includes:
   - customers
   - orders
   - order_lines
+  - nutritional_values
   - products
   - sales_taxes
   - tags

@@ -1,5 +1,13 @@
 # Release History
 
+## v3.1.20
+
+**Date:** 2025-01-29
+
+Feature release
+
+- Added the nutritional-values end point
+
 
 ## v3.1.19
 
